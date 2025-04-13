@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    margin: auto;
+    height: 80vh;
+    background-color: #161616;
+    background-image: url(../../assets/section3bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+    display: flex;
+
+    .innerContainer {
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+
+        p:nth-child(1) {
+            color: white;
+        }
+        p:nth-child(2) {
+            color: white;
+        }
+        p:nth-child(3) {
+            color: white;
+        }
+        ul:nth-child(4) {
+            display: inline-block;
+
+            li {
+                color: white;
+            }
+        }
+        ul:nth-child(5) {
+            display: inline-block;
+
+            li {
+                color: white;
+            }
+        }
+    }
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00000069 0%, #161616 100%);
+    z-index: -1;
+    pointer-events: none;
+}
