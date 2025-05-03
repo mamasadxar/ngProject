@@ -14,7 +14,4 @@ export class SignUpComponent {
 		password: new FormControl(''),
 	})
 
-	onSubmit() {
-		
-	}
 }

@@ -1,0 +1,123 @@
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-family: 'Racing Sans One';
+        text-transform: uppercase;
+        font-size: 350%;
+        text-align: center;
+    }
+    .upperdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 3%;
+
+        .ucard1 {
+            background-image: url(../../assets/lightweight.jpg);
+            height: 25vh;
+            // width: 100%;
+            position: relative;
+            position: relative;
+            opacity: 1;
+            z-index: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            p:nth-child(2) {
+                text-wrap: wrap;
+                color: white;
+                font-family: 'Racing Sans One';
+                font-size: 200%;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p:nth-child(1) {
+                color: rgb(224, 224, 224);
+                text-wrap: wrap;
+                margin: 0;
+                font-family: sans-serif;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+        }
+        .ucard1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #00000069 0%, #161616 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .ucard2 {
+            background-image: url(../../assets/lifetimewarranty.jpg);
+            height: 25vh;
+            // width: ;
+            position: relative;
+            position: relative;
+            opacity: 1;
+            z-index: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            p:nth-child(2) {
+                text-wrap: wrap;
+                color: white;
+                font-family: 'Racing Sans One';
+                font-size: 200%;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p:nth-child(1) {
+                color: rgb(224, 224, 224);
+                text-wrap: wrap;
+                margin: 0;
+                font-family: sans-serif;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+        }
+        .ucard2::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #00000069 0%, #161616 100%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+    .lowerdiv {
+        .card1 {
+            p {
+
+            }
+        }
+        .card2 {
+            p {
+
+            }
+        }
+        .card3 {
+            p {
+
+            }
+        }
+    }
+}

@@ -1,7 +1,8 @@
 .container {
-    max-width: 1300px;
+    max-width: 1250px;
     width: 100%;
     margin: auto;
+    padding: 0 2.5vw;
 
     p {
         font-family: 'Racing Sans One';
@@ -11,15 +12,26 @@
         text-align: center;
     }
     .cardDiv {
-        display: grid;
-        grid-template-columns: 23% 23% 23% 23%;
-        gap: 2%;
+        display: flex;
         width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
         margin-bottom: 150px;
+        gap: 2%;
 
         .card {
             height: 350px;
             border: 1px solid black;
+            width: 23%;
+        }
+    }
+}
+@media (max-width: 1380px) {
+    .container {
+        .cardDiv {
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
         }
     }
 }
