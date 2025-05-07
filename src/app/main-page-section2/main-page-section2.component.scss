@@ -12,26 +12,28 @@
         text-align: center;
     }
     .cardDiv {
-        display: flex;
+        display: grid;
         width: 100%;
-        align-items: center;
-        justify-content: space-evenly;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
         margin-bottom: 150px;
         gap: 2%;
 
         .card {
             height: 350px;
             border: 1px solid black;
-            width: 23%;
+            width: 100%;
         }
     }
 }
 @media (max-width: 1380px) {
     .container {
+        max-width: 1000px;
+
         .cardDiv {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            width: 100%;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
         }
     }
 }
