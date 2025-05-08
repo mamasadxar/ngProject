@@ -1,0 +1,13 @@
+.outerContainer {
+    background-color: #161616;
+
+    .innerContainer {
+        display: flex;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
