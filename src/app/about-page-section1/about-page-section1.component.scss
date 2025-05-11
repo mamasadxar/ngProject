@@ -1,0 +1,66 @@
+.container {
+    background-image: url(../../assets/section3bg.jpg);
+    position: relative;
+    z-index: 0;
+    opacity: 1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .innerContainer {
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding-top: 200px;
+
+        p {
+            font-family: 'Racing Sans One';
+            color: white;
+            font-size: 600%;
+            margin: 0;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .video {
+            background-image: url(../../assets/aboutpagevideo.jpg);
+            height: 600px;
+            width: 1000px;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 100px;
+        }
+        .video::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #00000069 0%, #161616 100%);
+                z-index: -1;
+                pointer-events: none;
+        }
+    }
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00000069 0%, #161616 100%);
+    z-index: -1;
+    pointer-events: none;
+}
