@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    gap: 40px;
+    margin-top: 7vh;
+}
+.filterSide {
+    border: 1px solid black;
+}
+.productSide {
+    border: 1px solid black;
+    padding: 5vh 5vw;
+
+    .titles {
+        p {
+            font-family: "Roboto";
+            font-weight: 500;
+            color: gray;
+        }
+        h1 {
+            font-family: 'Racing Sans One';
+            color: #df453e;
+            font-size: 500%;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 5vh;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.outerContainer {
+    height: 90px;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    // position: absolute;
+    background-color: #df453e;
+    
+    .innerContainer {
+        display: flex;
+        max-width: 1300px;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        
+        .links {
+            display: flex;
+            gap: 15px;
+            
+            a {
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+}
