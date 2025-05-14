@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product, ProductResponse } from '../shop-page-items/product.model';
 import { HttpServiceService } from '../http-service.service';
@@ -11,16 +11,18 @@ import { HttpServiceService } from '../http-service.service';
   styleUrl: './shop-page-items.component.scss'
 })
 export class ShopPageItemsComponent {
-    product: ProductResponse[] = [];
-
+    product: Product[] = [];
+    imenaProduct: Array<any>[] = [];
 
   constructor(public http: HttpClient, public httpService: HttpServiceService) { }
 
   ngOnInit() {
+
     this.httpService.getAllProducts().subscribe((data) => {
-      this.product = data.products;
-      console.log(this.product);
+      this.imenaProduct = Object.entries(data);
+      console.log(this.imenaProduct)
+      this.product = this.imenaProduct[4][1];
+      console.log(this.product)
     });
-    
   }
 }

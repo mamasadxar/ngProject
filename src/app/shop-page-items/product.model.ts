@@ -7,21 +7,21 @@ export interface ProductResponse {
 }
 
 export interface Product {
-  price: Price;
+  price: Prices;
   category: Category;
   _id: string;
   title: string;
-  description: string;
+  desctiption: string;
   issueDate: string;
   thumbnail: string;
   stock: number;
   rating: number;
   brand: string;
   warranty: number;
-  images: string[];
+  images: Array<string>;
 }
 
-export interface Price {
+export interface Prices {
   current: number;
   currency: string;
   beforeDiscount: number;
@@ -29,7 +29,7 @@ export interface Price {
 }
 
 export interface Category {
-  id: string;
+  id: number;
   name: string;
   image: string;
 }

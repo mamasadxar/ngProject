@@ -6,15 +6,13 @@
             <h1>Bicycles</h1>
         </div>
         <div class="cards">
-            @for (item of product.products; track $index) {
-                <div class="card">
-                    <img src="">
-                    <p class="category"></p>
-                    <p class="name"></p>
-                    <div class="rating">
-
-                    </div>
-                    <p class="price"></p>
+            @for (item of product; track $index) {
+                <div style="width: 250px; height: 400px;" class="card">
+                    <img style="width: 100%; height: 40%;" src="{{item.thumbnail}}">
+                    <p style="font-family: 'Roboto'; font-weight: 500; color: gray;" class="category">{{item.category.name}}</p>
+                    <p style="font-family: 'Racing Sans One';" class="name">{{item.title}}</p>
+                    <div class="rating"></div>
+                    <p style="font-family: 'Roboto'; color: rgb(114, 114, 114); font-weight: 700;" class="price">{{item.price.current}} <span>{{item.price.currency}}</span></p>
                 </div>
             }
         </div>
