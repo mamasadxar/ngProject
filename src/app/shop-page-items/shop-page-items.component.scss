@@ -38,4 +38,24 @@
         grid-template-columns: 250px 250px 250px;
         gap: 20px;
     }
+    .pagination {
+        width: 250px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .p {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            background-color: #df453e;
+            color: white;
+            font-family: 'Roboto';
+            font-weight: 500;
+        }
+    }
 }

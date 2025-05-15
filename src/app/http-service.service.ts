@@ -22,5 +22,17 @@ export class HttpServiceService {
   loginUser(data: any): Observable<any> {
     return this.http.post('https://api.everrest.educata.dev/auth/sign_in', data);
   }
+
+  itemsPageTwo():Observable<Product[]> {
+    return this.http.get<Product[]>('https://api.everrest.educata.dev/shop/products/all?page_index=2&page_size=10')
+  }
+
+    itemsPageThree():Observable<Product[]> {
+    return this.http.get<Product[]>('https://api.everrest.educata.dev/shop/products/all?page_index=3&page_size=10')
+  }
+
+    itemsPageFour():Observable<Product[]> {
+    return this.http.get<Product[]>('https://api.everrest.educata.dev/shop/products/all?page_index=4&page_size=8')
+  }
 }
 

@@ -17,12 +17,47 @@ export class ShopPageItemsComponent {
   constructor(public http: HttpClient, public httpService: HttpServiceService) { }
 
   ngOnInit() {
-
     this.httpService.getAllProducts().subscribe((data) => {
       this.imenaProduct = Object.entries(data);
       console.log(this.imenaProduct)
       this.product = this.imenaProduct[4][1];
       console.log(this.product)
+    });
+  }
+
+  firstPage() {
+    this.httpService.getAllProducts().subscribe((data) => {
+      this.imenaProduct = Object.entries(data);
+      console.log(this.imenaProduct);
+      this.product = this.imenaProduct[4][1];
+      console.log(this.product);
+    });
+  }
+
+  secondPage() {
+    this.httpService.itemsPageTwo().subscribe((data) => {
+      this.imenaProduct = Object.entries(data);
+      console.log(this.imenaProduct);
+      this.product = this.imenaProduct[4][1];
+      console.log(this.product);
+    });
+  }
+
+  thirdPage() {
+    this.httpService.itemsPageThree().subscribe((data) => {
+      this.imenaProduct = Object.entries(data);
+      console.log(this.imenaProduct);
+      this.product = this.imenaProduct[4][1];
+      console.log(this.product);
+    });
+  }
+
+  fourthPage() {
+    this.httpService.itemsPageFour().subscribe((data) => {
+      this.imenaProduct = Object.entries(data);
+      console.log(this.imenaProduct);
+      this.product = this.imenaProduct[4][1];
+      console.log(this.product);
     });
   }
 }
