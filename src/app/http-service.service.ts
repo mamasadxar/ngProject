@@ -9,7 +9,7 @@ import { Product, ProductResponse } from './shop-page-items/product.model';
 export class HttpServiceService {
   public productsUrl = 'https://api.everrest.educata.dev/shop/products';
     
-  constructor(private http: HttpClient, private hcm: HttpClientModule) { }
+  constructor(private http: HttpClient) { }
   
   getAllProducts():Observable<Product[]> {
     return this.http.get<Product[]>(`https://api.everrest.educata.dev/shop/products/all?page_index=1&page_size=10`);
