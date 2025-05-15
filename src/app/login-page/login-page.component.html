@@ -1,0 +1,17 @@
+<app-shop-page-header></app-shop-page-header>
+<div class="container">
+    @if (successfullLogin) {
+    <div class="registrationDiv">
+        <p>Successfully Logged in</p>
+    </div>
+    }
+
+    <div class="formDiv">
+        <h1>Login</h1>
+        <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+            <input formControlName="email" placeholder="Email" type="text"><br>
+            <input formControlName="password" placeholder="Password" type="password"><br>
+            <input type="submit">
+        </form>
+    </div>
+</div>

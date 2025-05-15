@@ -27,6 +27,9 @@
             }
         }
         .loginSignUp {
+            display: flex;
+            gap: 20px;
+            
             a {
                 color: white;
                 font-family: 'Roboto';

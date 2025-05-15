@@ -13,6 +13,7 @@ import { HttpServiceService } from '../http-service.service';
 })
 export class SignUpComponent {
 	constructor(private http: HttpServiceService) {}
+	successfullRegistration = false;
 
 	registrationForm = new FormGroup({
 		firstName: new FormControl(''),
@@ -33,10 +34,12 @@ export class SignUpComponent {
 		this.http.postData(formValue).subscribe(
 			(response) => {
 				console.log('gaigzavnaAMGELOOOO', response);
+				this.successfullRegistration = true;
 			},
 			(error) => {
 				console.log('azzearxar', error)
 			}	
 		)
+		this.registrationForm.reset()
 	}
 }

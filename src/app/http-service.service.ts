@@ -18,5 +18,9 @@ export class HttpServiceService {
   postData(data: any): Observable<any> {
     return this.http.post("https://api.everrest.educata.dev/auth/sign_up", data);
   }
+
+  loginUser(data: any): Observable<any> {
+    return this.http.post('https://api.everrest.educata.dev/auth/sign_in', data);
+  }
 }
 

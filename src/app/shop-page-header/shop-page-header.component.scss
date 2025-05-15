@@ -27,5 +27,16 @@
                 color: white;
             }
         }
+        .loginSignUp {
+            display: flex;
+            gap: 20px;
+
+            a {
+                color: white;
+                font-family: 'Roboto';
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
     }
 }
