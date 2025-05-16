@@ -2,16 +2,51 @@
     max-width: 1300px;
     width: 100%;
     margin: auto;
-    padding: 10vh 10vw;
+    padding: 10vh 10vh;
     background-color: white;
     margin-top: 10vh;
     box-sizing: border-box;
 
     .upperDiv {
+        display: flex;
+        gap: 20px;
+
         .imgDiv {
             img {
                 width: 500px;
                 height: 375px;
+            }
+        }
+        .allat {
+            .crumbs {
+                font-family: 'Roboto';
+                color: rgb(107, 107, 107);
+                // font-size: ;
+                font-weight: 600
+            }
+            .category {
+                text-transform: capitalize;
+                color: #de453e;
+                font-family: 'Roboto';
+                font-weight: 500;
+            }
+            .name {
+                font-family: 'Racing Sans One';
+                font-size: 170%;
+                margin: 0;
+                margin: 20px 0;
+            }
+            .price {
+                font-family: 'Roboto';
+                color: rgb(80, 80, 80);
+                font-weight: 900;
+                font-size: 150%;
+                margin: 0;
+            }
+            .description {
+                font-family: 'Roboto';
+                color: rgb(82, 82, 82);
+                font-weight: 500;
             }
         }
     }
