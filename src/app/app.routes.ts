@@ -14,7 +14,7 @@ export const routes: Routes = [
     { path: 'home', component: MainPageComponent},
     { path: 'shop', component: ShopPageComponent },
     { path: 'login', component: LoginPageComponent },
-    { path: 'template', component: ItemTemplatePageComponent }
+    { path: 'template', component: ItemTemplatePageComponent, }
 ];
 
 @NgModule({

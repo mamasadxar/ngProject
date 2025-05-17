@@ -10,6 +10,27 @@
             <p class="name">{{name}}</p>
             <p class="price">{{currentPrice}} {{currency}}</p>
             <p class="description">{{description}}</p>
+            <div class="cartDiv">
+                <input type="number">
+                <button>add to cart</button>
+            </div>
+            <div class="allatLine"></div>
+            <p class="category2">Category: <span>{{category}}</span></p>
         </div>
     </div>
+    <div class="lowerDiv">
+        <div class="lowerLine"></div>
+        <div class="whatisthisdiv">
+            <div #descriptionBtn (click)="descriptionFunction()" class="descriptionBtn">Description</div>
+            <div #reviewsBtn (click)="rateFunction()" class="reviewsBtn">Reviews</div>
+        </div>
+
+        @if (descriptionOrRating) {
+            <p class="desc">{{description}}</p>
+        }
+        @if (!descriptionOrRating) {
+
+        }
+    </div>
 </div>
+<app-main-page-footer></app-main-page-footer>
