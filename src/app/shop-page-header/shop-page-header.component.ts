@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { HttpServiceService } from '../http-service.service';
 
 @Component({
   selector: 'app-shop-page-header',
@@ -8,5 +9,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './shop-page-header.component.scss'
 })
 export class ShopPageHeaderComponent {
-
+  status = sessionStorage.getItem('status');
 }

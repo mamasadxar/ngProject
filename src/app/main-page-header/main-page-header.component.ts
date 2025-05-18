@@ -8,5 +8,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './main-page-header.component.scss'
 })
 export class MainPageHeaderComponent {
-
+  status = sessionStorage.getItem('status');
 }

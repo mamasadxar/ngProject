@@ -9,9 +9,17 @@
             <a routerLink="/about">ABOUT US</a>
             <a href="">CONTACT</a>
         </div>
+        @if (status) {
+        <div class="loginSignUp">
+            <a routerLink="/cart">CART</a>
+            <a>PROFILE</a>
+        </div>   
+        }
+        @else {
         <div class="loginSignUp">
             <a routerLink="/signup">SIGN UP</a>
             <a routerLink="/login">LOGIN</a>
         </div>
+        }
     </div>
 </div>

@@ -6,6 +6,7 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ItemTemplatePageComponent } from './item-template-page/item-template-page.component';
 import { NgModule } from '@angular/core';
+import { CartPageComponent } from './cart-page/cart-page.component';
 
 export const routes: Routes = [
     { path: '', component: MainPageComponent },
@@ -14,7 +15,8 @@ export const routes: Routes = [
     { path: 'home', component: MainPageComponent},
     { path: 'shop', component: ShopPageComponent },
     { path: 'login', component: LoginPageComponent },
-    { path: 'template', component: ItemTemplatePageComponent, }
+    { path: 'template', component: ItemTemplatePageComponent, },
+    { path: 'cart', component: CartPageComponent }
 ];
 
 @NgModule({
@@ -22,4 +24,4 @@ export const routes: Routes = [
     exports: [RouterModule]
 })
 
-export class AppRoutingModule { }
+export class AppRoutingModule { } 

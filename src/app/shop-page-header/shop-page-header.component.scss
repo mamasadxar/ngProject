@@ -3,7 +3,6 @@
     display: flex;
     width: 100%;
     z-index: 1;
-    // position: absolute;
     background-color: #df453e;
     
     .innerContainer {
@@ -39,4 +38,10 @@
             }
         }
     }
+}
+.cart {
+    font-family: 'Roboto';
+    font-size: 150%;
+    color: white;
+    font-weight: 500;
 }
