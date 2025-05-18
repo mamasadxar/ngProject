@@ -14,10 +14,10 @@ export class CartPageComponent {
 
   accessToken = localStorage.getItem('access_token');
 
-    ngOnInit() {
-    this.http.getCartItems().subscribe((data) => {
-      this.cartArray = data;
-      console.log(this.cartArray);
-    });
-  }
+  //   ngOnInit() {
+  //   this.http.getCartItems().subscribe((data) => {
+  //     this.cartArray = data;
+  //     console.log(this.cartArray);
+  //   });
+  // }
 }
