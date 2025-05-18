@@ -34,8 +34,9 @@ export class HttpServiceService {
     itemsPageFour():Observable<Product[]> {
     return this.http.get<Product[]>('https://api.everrest.educata.dev/shop/products/all?page_index=4&page_size=8')
   }
-    getCartItems(token: any):Observable<any> {
-      return this.http.get<any>('https://api.everrest.educata.dev/shop/cart', token);
+    getCartItems():Observable<any> {
+      return this.http.get<any>('https://api.everrest.educata.dev/shop/cart');
     }
 }
 
+  

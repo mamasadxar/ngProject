@@ -16,6 +16,8 @@ export class LoginPageComponent {
 	successfullLogin = false;
 	loggedIn = false;
 
+	emailVerified = false;
+
 	accessToken = undefined;
 	refreshToken = undefined;
 
@@ -39,6 +41,7 @@ export class LoginPageComponent {
 				localStorage.setItem('refresh_token', response.refresh_token);
 				sessionStorage.setItem('status', `${this.loggedIn}`);
 				this.router.navigate(['/home']);
+				
 			},
 			(error) => {
 				console.log('vershexvedimgelo', error);
