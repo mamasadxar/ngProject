@@ -4,10 +4,12 @@ import { MainPageHeaderComponent } from "../main-page-header/main-page-header.co
 import { ShopPageHeaderComponent } from "../shop-page-header/shop-page-header.component";
 import { HttpClientModule } from '@angular/common/http';
 import { HttpServiceService } from '../http-service.service';
+import { Router } from '@angular/router';
+import { VerifyPageComponent } from '../verify-page/verify-page.component';
 
 @Component({
   selector: 'app-sign-up',
-  imports: [ReactiveFormsModule, ShopPageHeaderComponent, HttpClientModule],
+  imports: [ReactiveFormsModule, ShopPageHeaderComponent, HttpClientModule, VerifyPageComponent],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.scss'
 })
@@ -28,6 +30,7 @@ export class SignUpComponent {
 		gender: new FormControl(''),
 	})
 
+
 	onSubmit() {
 		let formValue = this.registrationForm.value;
 
@@ -35,6 +38,7 @@ export class SignUpComponent {
 			(response) => {
 				console.log('gaigzavnaAMGELOOOO', response);
 				this.successfullRegistration = true;
+				localStorage.setItem('localUser', response._id);
 			},
 			(error) => {
 				console.log('azzearxar', error)

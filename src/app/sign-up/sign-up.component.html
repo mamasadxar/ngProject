@@ -1,34 +1,35 @@
-<app-shop-page-header></app-shop-page-header>
-<div class="container">
-    @if (successfullRegistration) {
-    <div class="registrationDiv">
-        <p>Successfully Registered</p>
-    </div>
-    }
 
-    <div class="formDiv">
-        <h1>Sign Up</h1>
-        <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm">
-            <input formControlName="firstName" placeholder="First Name" type="text"><br>
-            <input formControlName="lastName" placeholder="Last Name" type="text"><br>
-            <input formControlName="age" placeholder="Age" type="number"><br>
-            <input formControlName="email" placeholder="Email" type="email"><br>
-            <input formControlName="password" placeholder="Password" type="password"><br>
-            <input formControlName="address" placeholder="Address" type="text"><br>
-            <input formControlName="phone" placeholder="Phone" type="text"><br>
-            <input formControlName="zipcode" placeholder="Zip Code" type="text"><br>
-            <input formControlName="avatar" placeholder="Avatar" type="text"><br>
-            <div class="gender">
-                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" class="male">
-                    <label for="gender">Male</label>
-                    <input class="erm" formControlName="gender" value="MALE" placeholder="Gender" name="gender" type="radio"><br>
+    <app-shop-page-header></app-shop-page-header>
+    <div class="container">
+        @if (successfullRegistration) {
+        <div class="registrationDiv">
+            <p>Successfully Registered</p>
+        </div>
+        }
+
+        <div class="formDiv">
+            <h1>Sign Up</h1>
+            <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm">
+                <input formControlName="firstName" placeholder="First Name" type="text"><br>
+                <input formControlName="lastName" placeholder="Last Name" type="text"><br>
+                <input formControlName="age" placeholder="Age" type="number"><br>
+                <input formControlName="email" placeholder="Email" type="email"><br>
+                <input formControlName="password" placeholder="Password" type="password"><br>
+                <input formControlName="address" placeholder="Address" type="text"><br>
+                <input formControlName="phone" placeholder="Phone" type="text"><br>
+                <input formControlName="zipcode" placeholder="Zip Code" type="text"><br>
+                <input formControlName="avatar" placeholder="Avatar" type="text"><br>
+                <div class="gender">
+                    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" class="male">
+                        <label for="gender">Male</label>
+                        <input class="erm" formControlName="gender" value="MALE" placeholder="Gender" name="gender" type="radio"><br>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" class="female">
+                        <label for="gender">Female</label>
+                        <input class="erm" formControlName="gender" value="FEMALE" placeholder="Gender" name="gender" type="radio"><br>
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;" class="female">
-                    <label for="gender">Female</label>
-                    <input class="erm" formControlName="gender" value="FEMALE" placeholder="Gender" name="gender" type="radio"><br>
-                </div>
-            </div>
-            <input type="submit">
-        </form>
+                <input type="submit">
+            </form>
+        </div>
     </div>
-</div>

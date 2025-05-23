@@ -8,6 +8,7 @@ import { ItemTemplatePageComponent } from './item-template-page/item-template-pa
 import { NgModule } from '@angular/core';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { VerifyPageComponent } from './verify-page/verify-page.component';
 
 export const routes: Routes = [
     { path: '', component: MainPageComponent },
@@ -18,7 +19,8 @@ export const routes: Routes = [
     { path: 'login', component: LoginPageComponent },
     { path: 'template', component: ItemTemplatePageComponent, },
     { path: 'cart', component: CartPageComponent },
-    { path: 'profile', component: ProfilePageComponent }
+    { path: 'profile', component: ProfilePageComponent },
+    { path: 'verify', component: VerifyPageComponent }
 ];
 
 @NgModule({

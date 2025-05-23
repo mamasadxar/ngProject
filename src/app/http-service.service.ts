@@ -23,6 +23,10 @@ export class HttpServiceService {
     return this.http.post('https://api.everrest.educata.dev/auth/sign_in', data);
   }
 
+  verifyUser(data: any):Observable<any> {
+    return this.http.post('https://api.everrest.educata.dev/auth/verify_email', data);
+  }
+
   itemsPageTwo():Observable<Product[]> {
     return this.http.get<Product[]>('https://api.everrest.educata.dev/shop/products/all?page_index=2&page_size=10')
   }
